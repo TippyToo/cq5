@@ -42,7 +42,7 @@ class Result {
         if (s1.length() == i) return false;
         if (s2.length() == j) return twoStringsRecurse(s1, s2, i+1, 0);
         if (s1.charAt(i) == s2.charAt(j)) return true;
-        else return twoStringsRecurse(s1, s2, i, j+1);
+        return twoStringsRecurse(s1, s2, i, j+1);
     }
 
 }
